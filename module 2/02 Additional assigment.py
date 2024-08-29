@@ -9,9 +9,10 @@ def lovushka(n):
             if n % divider ==0:
                 if result.count(i) and result.count(j):
                     break
-                result.append(i)
                 result.append(j)
-                continue
+                result.append(i)
+
+    for k in range(len(result)):
+        print(result[k], sep="", end='')
 
 lovushka(20)
-print(result)
