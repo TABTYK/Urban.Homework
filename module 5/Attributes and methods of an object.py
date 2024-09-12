@@ -10,7 +10,7 @@ class House():
             for i in range(1,new_floor+1):
                 print(i)
 
-H1 = House('ЖК Горский', 18)
-H1.go_to(6)
-H2 = House('ЖК 52', 52)
-H2.go_to(-3)
+#H1 = House('ЖК Горский', 18)
+#H1.go_to(6)
+#H2 = House('ЖК 52', 52)
+#H2.go_to(-3)
