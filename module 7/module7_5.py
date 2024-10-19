@@ -1,11 +1,12 @@
 import os
 import time
 
-print('Текущая директория:',os.getcwd())
-for root,dirs,files in os.walk(os.getcwd()):
+directory = os.getcwd()
+print('Текущая директория:',directory)
+for root,dirs,files in os.walk(directory):
     for file in files:
 
-        filepath = os.path.join(rf'C:\Users\mnk-g\PycharmProjects\pythonProject1\module 7\{file}')
+        filepath = os.path.join(rf'{directory}\{file}')
         filetime = os.path.getmtime(filepath)
         formatted_time = time.strftime("%d.%m.%Y %H:%M", time.localtime(filetime))
         filesize = os.path.getsize(filepath)
