@@ -1,6 +1,3 @@
-from errno import ECHILD
-
-
 class Car():
     def __is_valid_vin(self,vin_number):
         if isinstance(vin_number,int):
