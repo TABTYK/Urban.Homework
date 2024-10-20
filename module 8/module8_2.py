@@ -7,6 +7,7 @@ def personal_sum(numbers):
             result += i
         except TypeError:
             incorrect_data +=1
+            print(i)
     return {'result':result,'incorrect_data':incorrect_data}
 
 def calculate_average(numbers):
