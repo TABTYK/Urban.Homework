@@ -41,7 +41,8 @@ try:
     iter1 = Iterator(100, 200, 0)
     for i in iter1:
         print(i, end=' ')
-except AttributeError:
+except AttributeError: # Поставил исключение, потому что проверка шага на 0 происходит до
+                       # создания переменной self.start
     print('ШАГ УКАЗАН НЕВЕРНО')
 except StepValueError:
     print('\nПеребор завершен')
@@ -77,3 +78,4 @@ try:
         print(i, end=' ')
 except StepValueError:
     print('\nПеребор завершен')
+
