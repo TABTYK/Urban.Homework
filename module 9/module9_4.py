@@ -17,8 +17,8 @@ def get_advanced_writer(file_name):
             return startfile(file_name)
     return write_everything
 
-#result = get_advanced_writer('example.txt')
-#result('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
+result = get_advanced_writer('example.txt')
+result('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
 
 class MysticBall():
     def __init__(self,*words):
