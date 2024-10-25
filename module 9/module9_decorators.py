@@ -1,10 +1,12 @@
 def is_prime(func):
     def wrapper(*args,**kwargs):
         original_result = func(*args,**kwargs)
-        if isinstance(original_result,int):
+        modified_result = (original_result/x for x in range(1,original_result) if original_result % x == 0)
+        #print(list(modified_result))
+        if len(list(modified_result))==1:
             print('Простое')
             return original_result
-        elif isinstance(original_result,float):
+        else:
             print('Составное')
             return original_result
     return wrapper
@@ -15,3 +17,4 @@ def sum_three(*args):
     return sum(args)
 
 print(sum_three(2,5,7))
+print(sum_three(5,5,7))
